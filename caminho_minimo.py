@@ -25,7 +25,7 @@ def dijkstra(G, vo):
                 pc[vadj] =  pc[vpm] + G[vpm][vadj]
                 pai[vadj] = vpm
                 
-    return sorted(pc.items()), sorted(pai.items())
+    return pc, pai
 
 def dfs_visit(vd, Lv, marca, G):
     marca[vd] = 'D'
